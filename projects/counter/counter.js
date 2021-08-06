@@ -1,33 +1,32 @@
-const decr = document.querySelector(".btn_decrease");
-const reset = document.querySelector(".btn_reset");
-const inc = document.querySelector(".btn_incrase");
+const btns = document.querySelectorAll(".btn");
 const value = document.querySelector(".number");
+let number = 0;
 
-const number = 0;
-decr.addEventListener("click", function(){
-    number-=1;
-    value.textContent = number;
-    color();
-});
-reset.addEventListener("click", function(){
-    number=0;
-    value.textContent = number;
-    color();
-});
-inc.addEventListener("click", function(){
-    number+=1;
-    value.textContent = number;
-    color();
+btns.forEach(function (btn) {
+    btn.addEventListener("click", function(e){
+        const styles = e.currentTarget.classList;
+        if(styles.contains("decrease")){
+            number--;  
+        }
+        else if(styles.contains("increase")){
+            number++;
+        }
+        else{
+            number=0;
+        }
+        value.textContent = number;
+        color();
+    });
 });
 
 function color(){
     if(number>0){
-        value.style.color = green;
+        value.style.color = "green";
     }
     if(number==0){
-        value.style.color = black;
+        value.style.color = "black";
     }
     if(number<0){
-        value.style.color = red;
+        value.style.color = "red";
     }
 }
