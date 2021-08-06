@@ -12,7 +12,6 @@ body{
     padding: 0 2rem;
     width:auto;
     box-shadow: 5px 5px 15px gray;
-    border-radius: 5px;
     margin: 0;
     display: flex;
     align-items: center;
@@ -32,7 +31,7 @@ body{
 }
 
 .projects{
-    margin: 2rem 4rem;
+    margin: 5rem 5rem;
 }
 
 .projects a{
@@ -40,8 +39,8 @@ body{
     color: black;
     font-size: 20px;
     font-weight: 600;
-    
 }
+
 
 .projects a:hover{
     color: #606470;
