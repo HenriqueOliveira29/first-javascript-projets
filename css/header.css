@@ -1,0 +1,49 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Public Sans", sans-serif;
+    font-size: 100%;
+    background-color: white;
+}
+
+
+.header{
+    padding: 0 2rem;
+    width:auto;
+    box-shadow: 5px 5px 15px gray;
+    border-radius: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.left h1{
+    color: #40a8c4;
+}
+.right a{
+    text-decoration: none;
+    color: #5f6769;
+    font-size:20px;
+    margin: 10px;
+
+}
+
+.projects{
+    margin: 2rem 4rem;
+}
+
+.projects a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.projects a:hover{
+    color: #606470;
+}
+
