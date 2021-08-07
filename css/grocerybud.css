@@ -1,0 +1,91 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    font-size: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    font-size: 30px;
+}
+.form{
+    margin-bottom: 10px;
+}
+
+
+.grocery-container{
+    visibility: hidden;
+}
+
+.show-container{
+    visibility: visible;
+}
+.grocery-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 1rem;
+    text-transform: capitalize;
+}
+
+.section{
+    padding: 3rem 6rem;
+    border: solid 1px #b2bec3;
+    border-radius: 15px;
+    margin: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+    box-shadow: 5px 5px 5px 3px #b2bec3;
+}
+#grocery{
+    border-radius: 10px;
+    border: solid 1px #b2bec3;
+    padding: 3px;
+    margin-right: 0;
+    padding: 8px 15px;
+}
+
+.submit-btn{
+    cursor: pointer;
+    border: 0;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-weight: 600;
+    background-color: #2ed573;
+    color:White;
+    margin-left: 0;
+
+}
+
+.clear-btn{
+    border: 0;
+    width: 10rem;
+    height: 2rem;
+    padding: 5px 10px;
+    font-weight: 600;
+    background-color: White;
+    color:red;
+    cursor: pointer;
+}
+.edit-btn, .delete-btn{
+    border: 0;
+    background: white;
+    cursor: pointer;
+}
+.edit-btn{
+    color:#2ed573;
+}
+
+.delete-btn{
+    color:red;
+}
